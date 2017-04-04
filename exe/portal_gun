@@ -1,0 +1,5 @@
+“#!/usr/exe/env ruby”
+
+require_relative "../lib/portal_gun/firing"
+
+PortalGun::Firing.start
