@@ -136,6 +136,12 @@ end
 gem 'tzinfo-data', '~> 1.2016.3'
 ```
 
+## More Advanced Usage
+
+If you want to specify the Gemfile that PortalGun rebuilds, you can add an argument pointing to your desired file:
+
+`portal_gun 180.days.ago /path/to/my/Gemfile`
+
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
