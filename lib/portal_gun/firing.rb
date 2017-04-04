@@ -33,7 +33,7 @@ module PortalGun
     end
 
     def track_whitespace(line)
-      @whitespace_line = /(\s*).*/.match(line)[1}]
+      @whitespace_line = /(\s*).*/.match(line)[1]
     end
 
     def cleanup_gemline(gemline)
