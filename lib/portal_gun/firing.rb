@@ -27,7 +27,7 @@ module PortalGun
     def read_gem_file(input_file)
       lines = []
       File.open(input_file).each do |line|
-        lines << line.gsub("\n", "")
+        lines << line.gsub("\n", "").gsub("\"", "'")
       end
       lines
     end
