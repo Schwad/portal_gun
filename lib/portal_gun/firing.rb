@@ -33,7 +33,7 @@ module PortalGun
     end
 
     def cleanup_gemline(gemline)
-      gemline.scan(/gem '(.*)[',|']/)[0][0].split(",")[0].gsub("'", "")
+      gemline.scan(/(\s*)gem '(.*)[',|']/)[0][0].split(",")[0].gsub("'", "")
     end
 
     def valid_gem_line(line)
