@@ -2,7 +2,6 @@
 
 #TODO:
 
--ignore commented out gem lines
 -implement test suite to mock out file reading and generation
 -hold true to amount of indentation used in gem file
 

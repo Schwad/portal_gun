@@ -37,7 +37,7 @@ module PortalGun
     end
 
     def valid_gem_line(line)
-      /^gem/ =~ line
+      (!(/\s*gem/ =~ line).nil?) && ((/\s*#/ =~ input).nil?)
     end
 
     def no_specification_valid_gem_line(line)
