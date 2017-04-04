@@ -9,9 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Nick Schwaderer"]
   spec.email         = ["nick.schwaderer@oceanshq.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Whip out your portal gun and take your Gemfile to any point in history.}
+  spec.homepage      = "https://github.com/schwad/portal_gun"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
