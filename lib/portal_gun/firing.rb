@@ -1,5 +1,6 @@
 module PortalGun
   class Firing
+    require 'pry'
     require 'date'
     require 'mechanize'
     require 'active_support/all'
