@@ -41,7 +41,7 @@ module PortalGun
     end
 
     def valid_gem_line(line)
-      if (!(/\s*gem/ =~ line).nil?) && ((/\s*#/ =~ input).nil?)
+      if (!(/\s*gem/ =~ line).nil?) && ((/\s*#/ =~ line).nil?)
         track_whitespace(line)
         true
       else
