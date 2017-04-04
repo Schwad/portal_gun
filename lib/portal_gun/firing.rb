@@ -32,12 +32,22 @@ module PortalGun
       lines
     end
 
+    def track_whitespace(line)
+      @whitespace_line = /(\s*).*/.match(line)[1}]
+    end
+
     def cleanup_gemline(gemline)
       gemline.scan(/\s*gem '(.*)[',|']/)[0][0].split(",")[0].gsub("'", "")
     end
 
     def valid_gem_line(line)
-      (!(/\s*gem/ =~ line).nil?) && ((/\s*#/ =~ input).nil?)
+      if (!(/\s*gem/ =~ line).nil?) && ((/\s*#/ =~ input).nil?)
+        track_whitespace(line)
+        true
+      else
+        track_whitespace("")
+        false
+      end
     end
 
     def no_specification_valid_gem_line(line)
@@ -65,7 +75,7 @@ module PortalGun
 
     def write_line(line)
       File.open("New_Gemfile", "a") do |file|
-        file.write "#{line}\n"
+        file.write "#{@whitespace_line}#{line}\n"
       end
     end
     # start(Date.today - 150, "SampleGemfile")
