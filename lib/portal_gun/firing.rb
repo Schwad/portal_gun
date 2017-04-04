@@ -2,8 +2,10 @@ module PortalGun
   class Firing
     require 'date'
     require 'mechanize'
+    require 'active_support/all'
 
     def start(date=nil, gem_file_source=nil)
+      binding.pry
       puts "I don't know about this morty...."
       gem_file_source ||= "Gemfile"
       date ||= (Date.today - 365)
