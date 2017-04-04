@@ -5,7 +5,7 @@ module PortalGun
 
     def start(date=nil, gem_file_source=nil)
       puts "I don't know about this morty...."
-      gem_file_source ||= "SampleGemfile"
+      gem_file_source ||= "Gemfile"
       date ||= (Date.today - 365)
       write_line(intro_block)
       read_gem_file(gem_file_source).each do |line|
