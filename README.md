@@ -150,6 +150,6 @@ The gem is available as open source under the terms of the [MIT License](http://
 
 - Implement test suite to mock out file reading and generation
 
-- Allow date specification
+- Also set time-specific ruby version
 
 - Format gemfile name to date
