@@ -1,6 +1,7 @@
 #!/usr/exe/env ruby
 
 require_relative "../lib/portal_gun/firing"
+require_relative "../lib/portal_gun/ruby_versions"
 
 supplied_version = PortalGun.run_versions(ARGV[0])
 PortalGun::Firing.new.start(ARGV[0], ARGV[1], supplied_version)
