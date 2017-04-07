@@ -1,4 +1,4 @@
-# PortalGun (Not Live - Yet)
+# PortalGun
 
 PortalGun allows developers to regenerate an entire Gemfile with the latest Gem
 versions based on a particular point in history.
