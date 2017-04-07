@@ -210,18 +210,19 @@ module PortalGun
       break if versions.length == 3
     end
 
-    puts "Here are the minor releases that were the most valid as of #{supplied_date}:"
-    versions.each_with_index do |version, index|
-      puts "[#{index}]: #{version}"
-    end
-    result = 'invalid'
-    while result == 'invalid'
-      puts 'Please enter which version you wish to use:'
-      result = gets.chomp
-      unless [0,1,2].include?(result.to_i)
-        result = 'invalid'
-      end
-    end
-    versions[result.to_i]
+    # puts "Here are the minor releases that were the most valid as of #{supplied_date}:"
+    # versions.each_with_index do |version, index|
+    #   puts "[#{index}]: #{version}"
+    # end
+    # result = 'invalid'
+    # while result == 'invalid'
+    #   puts 'Please enter which version you wish to use:'
+    #   result = gets.chomp
+    #   unless [0,1,2].include?(result.to_i)
+    #     result = 'invalid'
+    #   end
+    # end
+    # versions[result.to_i]
+    versions
   end
 end

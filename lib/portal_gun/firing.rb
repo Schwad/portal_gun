@@ -4,13 +4,17 @@ module PortalGun
     require 'mechanize'
     require 'active_support/all'
 
-    def start(date=nil, gem_file_source=nil, ruby_version=nil)
+    def start(date=nil, gem_file_source=nil, ruby_versions=nil)
       date = eval(date) unless date.nil?
       gem_file_source ||= "Gemfile"
       puts "I don't know about this Rick...."
       date ||= (Date.today - 365)
       write_line(intro_block)
-      write_line "ruby #{ruby_version}\n"
+
+      write_line("These are the most stable versions of the three latest minor ruby releases as of this point in time. Uncomment the one you wish to use.\n")
+      ruby_versions.each do |rv|
+        write_line "#ruby #{ruby_version}\n"
+      end
       read_gem_file(gem_file_source).each do |line|
         if valid_gem_line(line)
           puts "Now processing: #{line}"
