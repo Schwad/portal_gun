@@ -13,7 +13,7 @@ module PortalGun
 
       write_line("These are the most stable versions of the three latest minor ruby releases as of this point in time. Uncomment the one you wish to use.\n")
       ruby_versions.each do |rv|
-        write_line "#ruby #{ruby_version}\n"
+        write_line "#ruby #{rv}\n"
       end
       read_gem_file(gem_file_source).each do |line|
         if valid_gem_line(line)
