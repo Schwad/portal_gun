@@ -58,7 +58,7 @@ def start(date, gem_file_source)
 end
 
 def write_line(line)
-  File.open("New_Gemfile", "a") do |file|
+  File.open("Portal_Gemfile", "a") do |file|
     file.write "#{line}\n"
   end
 end

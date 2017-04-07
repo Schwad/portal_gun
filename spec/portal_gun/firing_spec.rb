@@ -2,13 +2,13 @@ module PortalGun
   describe Firing do
 
     def wipe_fake_gemfile
-      File.delete("New_Gemfile")
+      File.delete("Portal_Gemfile")
     end
 
     describe '#write_line' do
      it "writes to new gemfile" do
       #  PortalGun::Firing.new.write_line("TestOneTwoThree")
-      #  expect(File.open('New_Gemfile', &:readline)).to eq("TestOneTwoThree\n")
+      #  expect(File.open('Portal_Gemfile', &:readline)).to eq("TestOneTwoThree\n")
       #  wipe_fake_gemfile
      end
 

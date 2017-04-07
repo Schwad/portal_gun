@@ -82,7 +82,7 @@ module PortalGun
     end
 
     def write_line(line)
-      File.open("New_Gemfile", "a") do |file|
+      File.open("Portal_Gemfile", "a") do |file|
         file.write "#{@whitespace_line}#{line}\n"
       end
     end
