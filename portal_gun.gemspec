@@ -3,6 +3,7 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'portal_gun/version'
 require 'portal_gun/firing'
+require 'portal_gun/ruby_versions'
 
 Gem::Specification.new do |spec|
   spec.name          = "portal_gun"
