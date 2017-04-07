@@ -196,6 +196,7 @@ module PortalGun
       puts "\n\n\nINVALID DATE FORMAT. Try '2.days.ago' or '2012-03-12'\n\n\n\n"
       exit
     end
+    supplied_date = eval(supplied_date)
     minors = []
     versions = []
 
